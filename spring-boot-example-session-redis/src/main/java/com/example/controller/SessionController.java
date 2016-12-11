@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/session")
 public class SessionController {
 
-	@RequestMapping("/sid")
-	public String sid(HttpSession session) {
-		return session.getId();
-	}
+    @RequestMapping("/sid")
+    public String sid(HttpSession session) {
+        return session.getId();
+    }
 
 }
