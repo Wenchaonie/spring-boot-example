@@ -12,7 +12,7 @@
 </dependency>
 ```
 
-## 2. 在HelloRestController.java添加接口，返回UUID
+## 2. 在HelloRestController.java中添加接口，返回UUID
 ```java
 @RequestMapping("/uuid")
 public String uuid(HttpSession session) {
