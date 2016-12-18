@@ -1,6 +1,6 @@
 # SpringBoot-Redis共享HttpSession
 
-## 1. 在pom中添加依赖
+## 1. 在pom.xml中添加依赖
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -12,7 +12,7 @@
 </dependency>
 ```
 
-## 2. 在controller添加接口，返回UUID
+## 2. 在HelloRestController添加接口，返回UUID
 ```java
 @RequestMapping("/uuid")
 public String uuid(HttpSession session) {
