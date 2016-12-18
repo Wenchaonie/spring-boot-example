@@ -1,7 +1,7 @@
 # SpringBoot-Redis共享HttpSession
 
 ## 1. 在pom中添加依赖
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-redis</artifactId>
@@ -13,7 +13,7 @@
 ```
 
 ## 2. 在controller添加接口，返回UUID
-```
+```java
 @RequestMapping("/uuid")
 public String uuid(HttpSession session) {
     UUID uuid = (UUID) session.getAttribute("uuid");
@@ -26,7 +26,7 @@ public String uuid(HttpSession session) {
 ```
 
 ## 3. 进入项目打包，并以7070，7071端口启动
-```
+```sh
 > mvn clean install -Dmaven.test.skip=true
 > java -jar target/spring-boot-example-session-redis-0.0.1-SNAPSHOT.jar --server.port=7070
 > java -jar target/spring-boot-example-session-redis-0.0.1-SNAPSHOT.jar --server.port=7071
