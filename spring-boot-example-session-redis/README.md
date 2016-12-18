@@ -8,15 +8,20 @@
 </dependency>
 <dependency>
     <groupId>org.springframework.session</groupId>
-    <artifactId>spring-session-data-redis</artifactId>
+    <artifactId>spring-session</artifactId>
 </dependency>
 ```
 
-## 2. 在controller添加接口，返回sessionId
+## 2. 在controller添加接口，返回UUID
 ```
-@RequestMapping("/sid")
-public String sid(HttpSession session) {
-    return session.getId();
+@RequestMapping("/uuid")
+public String uuid(HttpSession session) {
+    UUID uuid = (UUID) session.getAttribute("uuid");
+    if (uuid == null) {
+        uuid = UUID.randomUUID();
+        session.setAttribute("uuid", uuid);
+    }
+    return uuid.toString();
 }
 ```
 
@@ -27,10 +32,8 @@ public String sid(HttpSession session) {
 > java -jar target/spring-boot-example-session-redis-0.0.1-SNAPSHOT.jar --server.port=7071
 ```
 
-## 4. 分别访问/sid接口，比较sessionId的异同
-`http://localhost:7070/session/sid` 返回 `bb076b71-83a3-4c39-af7f-928f0e92e9e9`
-`http://localhost:7071/session/sid` 返回 `bb076b71-83a3-4c39-af7f-928f0e92e9e9`
-
-经实践得知，只有当`server.contextPath`相同时，`HttpSession`才能共享，具体原因还没深究
+## 4. 分别访问/uuid接口，比较UUID的异同
+`http://localhost:7070/uuid` 返回 `a1f17b46-fb10-4e5c-94ab-709511304e36`
+`http://localhost:7071/uuid` 返回 `a1f17b46-fb10-4e5c-94ab-709511304e36`
 
 *PS：本文使用的是spring-boot-1.3.8.RELEASE*
