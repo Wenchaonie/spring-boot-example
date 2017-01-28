@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="186.625" y="0.0">org.springframework.session.web.http.SessionRepositoryFilter</node>
+    <node x="266.0" y="-94.0">javax.servlet.FilterChain</node>
+    <node x="12.0" y="-88.0">org.apache.catalina.core.ApplicationFilterChain</node>
+    <node x="0.0" y="0.0">javax.servlet.http.HttpServletRequest</node>
+    <node x="279.875" y="81.0">org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryResponseWrapper</node>
+    <node x="253.5" y="157.0">org.springframework.session.web.http.SessionRepositoryFilter.MultiHttpSessionStrategyAdapter</node>
+    <node x="19.875" y="81.0">org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryRequestWrapper</node>
+    <node x="397.25" y="0.0">javax.servlet.http.HttpServletResponse</node>
+    <node x="55.0" y="162.0">org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryRequestWrapper.HttpSessionWrapper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.session.web.http.SessionRepositoryFilter.MultiHttpSessionStrategyAdapter" target="org.springframework.session.web.http.SessionRepositoryFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryResponseWrapper" target="javax.servlet.http.HttpServletResponse">
+      <point x="62.5" y="-15.5" />
+      <point x="467.375" y="56.0" />
+      <point x="474.75" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryRequestWrapper.HttpSessionWrapper" target="org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryRequestWrapper">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.core.ApplicationFilterChain" target="javax.servlet.FilterChain">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryRequestWrapper" target="org.springframework.session.web.http.SessionRepositoryFilter">
+      <point x="60.0" y="-15.5" />
+      <point x="199.875" y="56.0" />
+      <point x="228.875" y="56.0" />
+      <point x="-42.25" y="15.5" />
+    </edge>
+    <edge source="org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryRequestWrapper" target="javax.servlet.http.HttpServletRequest">
+      <point x="-60.0" y="-15.5" />
+      <point x="79.875" y="56.0" />
+      <point x="72.5" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryResponseWrapper" target="org.springframework.session.web.http.SessionRepositoryFilter">
+      <point x="-62.5" y="-15.5" />
+      <point x="342.375" y="56.0" />
+      <point x="313.375" y="56.0" />
+      <point x="42.25" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="222.0" y="117.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
