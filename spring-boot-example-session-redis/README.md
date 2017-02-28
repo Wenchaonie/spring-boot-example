@@ -40,4 +40,4 @@ java -jar target/spring-boot-example-session-redis-0.0.1-SNAPSHOT.jar --server.p
 `http://localhost:7070/uuid` 返回 `a1f17b46-fb10-4e5c-94ab-709511304e36`  
 `http://localhost:7071/uuid` 返回 `a1f17b46-fb10-4e5c-94ab-709511304e36`
 
-*PS：本文使用的是spring-boot-1.3.8.RELEASE*
+*PS：本文使用的是spring-boot-1.4.4.RELEASE*
