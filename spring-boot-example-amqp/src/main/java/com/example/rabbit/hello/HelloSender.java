@@ -1,4 +1,4 @@
-package com.example.sender;
+package com.example.rabbit.hello;
 
 import org.apache.log4j.Logger;
 import org.springframework.amqp.core.AmqpTemplate;
@@ -13,8 +13,7 @@ public class HelloSender {
     @Autowired
     private AmqpTemplate rabbitTemplate;
 
-    public void send() {
-        String message = "hello world";
+    public void send(String message) {
         rabbitTemplate.convertAndSend("hello", message);
         logger.info(String.format("send message: %s", message));
     }
