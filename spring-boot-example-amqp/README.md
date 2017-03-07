@@ -107,7 +107,7 @@ RabbitMQ中实现RPC的机制是：
 
 #### *2. application.properties配置*
 
-```java
+```properties
 spring.rabbitmq.host=localhost
 spring.rabbitmq.port=5672
 spring.rabbitmq.username=guest
