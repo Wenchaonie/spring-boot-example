@@ -1,11 +1,5 @@
 # SpringBoot-Redis共享HttpSession
 
-## Redis简介
-
-## 安装Redis
-
-此处不进行详细说明。
-
 ## SpringBoot集成Redis、SpringSession
 
 #### *1. pom.xml添加依赖*
