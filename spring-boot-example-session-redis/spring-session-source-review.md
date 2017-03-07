@@ -1,4 +1,4 @@
-# SpringBoot-SpringSession源码阅后感
+# SpringBoot-SpringSession源码分析
 
 > spring-session是用于分布式系统共享HttpSession的，可以与spring-boot结合使用，默认使用Redis作为介质。
 
