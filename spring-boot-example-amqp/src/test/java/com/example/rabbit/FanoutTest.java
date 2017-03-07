@@ -16,7 +16,7 @@ public class FanoutTest {
 
     @Test
     public void test() {
-        fanoutSender.send("hello world");
+        fanoutSender.send("email");
     }
 
 }

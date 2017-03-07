@@ -20,15 +20,15 @@ public class ManyTest {
     @Test
     public void oneToMany() {
         for (int i = 0; i < 10; i++) {
-            messageSender1.send(String.format("hello world(%d)", i));
+            messageSender1.send(String.format("hi(%d)", i + 1));
         }
     }
 
     @Test
     public void manyToMany() {
-        for (int i = 0; i < 20; i++) {
-            messageSender1.send(String.format("hello world(%d)", i));
-            messageSender2.send(String.format("hello world(%d)", i));
+        for (int i = 0; i < 10; i++) {
+            messageSender1.send(String.format("hi(%d)", i + 1));
+            messageSender2.send(String.format("hi(%d)", i + 1));
         }
     }
 

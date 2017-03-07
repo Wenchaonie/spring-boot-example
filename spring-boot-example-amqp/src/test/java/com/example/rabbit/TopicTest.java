@@ -22,17 +22,17 @@ public class TopicTest {
 
     @Test
     public void topicA() {
-        topicASender.send("hello world");
+        topicASender.send("tag");
     }
 
     @Test
     public void topicB() {
-        topicBSender.send("hello world");
+        topicBSender.send("tag");
     }
 
     @Test
     public void topicAny() {
-        topicAnySender.send("hello world");
+        topicAnySender.send("tag");
     }
 
 }
