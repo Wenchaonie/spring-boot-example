@@ -8,6 +8,6 @@ SpringBoot的监控。
 
 介绍RabbitMQ，以及与SpringBoot的集成。
 
-## [SpringBoot-Redis共享HttpSession](https://github.com/1479005017/spring-boot-example/tree/master/spring-boot-example-admin-server)
+## [SpringBoot-Redis共享HttpSession](https://github.com/1479005017/spring-boot-example/tree/master/spring-boot-example-session-redis)
 
 使用Redis作为缓存，共享HttpSession。
