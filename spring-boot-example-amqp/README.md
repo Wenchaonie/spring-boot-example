@@ -1,4 +1,4 @@
-# SpringBoot-RabbitMQ
+# SpringBoot-RabbitMQ（消息队列）
 
 > 此文择取于 [Lewe](http://www.jianshu.com/u/6de0b7e9137c) 的 [RabbitMQ基础概念详细介绍](http://www.jianshu.com/p/b26336fd1e90) 和 [极乐君](http://www.jianshu.com/u/55af8d0de729) 的 [Spring Boot系列(八)：RabbitMQ详解](http://www.jianshu.com/p/26b233ca7a4e)
 
