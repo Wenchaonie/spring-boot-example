@@ -32,10 +32,10 @@ pttl str // 同ttl，单位为毫秒
 
 ```shell
 set count 0 // 设置key:value
-setnx count 0 // 设置key:value，如果key已经存在，不进行操作
+setnx count 0 // 同set，但是如果key已经存在，则不进行任何操作
 mset str1 aaa str2 bbb str3 ccc // 同时设置多个key:value
 msetnx str1 aaa str2 bbb str3 ccc // 同mset，但是如果任意一个key已经存在，则不进行任何操作
-getset count 6 // 获取原来的value，并设置新value
+getset count 6 // 获取原来的value，并设置新的value
 get count // 根据key获取value
 mget str1 str2 // 获取多个value
 
@@ -49,9 +49,9 @@ decr count 3 // 数值类型字符串减3操作，并返回最新值
 
 ```shell
 lpush loves basketball // 从左侧插入一个对象
-lpushx interests basketball // 同lpush，但是如果key不存在，不进行任何操作
+lpushx interests basketball // 同lpush，但是如果key不存在，则不进行任何操作
 rpush loves football // 从右侧插入一个对象
-rpushx interests football // 同rpush，但是如果key不存在，不进行任何操作
+rpushx interests football // 同rpush，但是如果key不存在，则不进行任何操作
 linsert loves AFTER basketball swimming // 在指定value的BEFORE/AFTER插入value
 lset loves 1 soccer // 重设指定下标的value
 lpop loves // 从左侧移除一个对象，并返回
@@ -106,7 +106,7 @@ zincrby foods 3 one // 对ranks中的one对象的score添加3
 
 ```shell
 hset user:001 id 1 // 设置hash中field:value
-hsetnx user:001 id 2 // 同hset，但是如果field已经存在，不进行任何操作
+hsetnx user:001 id 2 // 同hset，但是如果field已经存在，则不进行任何操作
 hmset user:001 username lily password 123456 // 设置hash中的多个field:value
 hdel user:001 password // 删除hash中一个或多个field
 hexists user:001 id // 判断hash中的field是否存在
