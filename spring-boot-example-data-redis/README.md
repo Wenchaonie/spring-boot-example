@@ -2,6 +2,8 @@
 
 ## Redis简介
 
+> 中文官网：http://www.redis.cn
+
 Redis是一种高级的key:value存储系统，其中value支持五种数据类型：
 
 - string 字符串
