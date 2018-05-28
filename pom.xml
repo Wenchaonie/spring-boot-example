@@ -12,6 +12,7 @@
         <module>spring-boot-example-admin-client</module>
         <module>spring-boot-example-admin-server</module>
         <module>spring-boot-example-amqp</module>
+        <module>spring-boot-example-rocketmq</module>
         <module>spring-boot-example-data-redis</module>
         <module>spring-boot-example-session-redis</module>
     </modules>
